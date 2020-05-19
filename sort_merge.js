@@ -22,7 +22,7 @@ const merge = (arr1, arr2) => {
   return results;
 }
 
-const mergeSort = arr => {
+const mergeSort = arr => { // O(NlogN)
   if (arr.length <= 1) return arr;
   let mid = Math.floor( arr.length / 2);
   let left = merge(arr.slice(0, mid));
