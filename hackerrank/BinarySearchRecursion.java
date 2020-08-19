@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class BinarySearchRecursion {
   public static boolean binarySearchRecursive(int[] array, int x, int left, int right) {
     if (left > right) {
       return false;
@@ -23,6 +23,8 @@ public class Solution {
     return binarySearchRecursive(array, x, 0, array.length - 1);
   }
   public static void main(String[] args) {
-    // 
+    int[] arr = {1, 2, 3, 6, 4, 3};
+    boolean bsr = binarySearchRecursive(arr, 3);
+    System.out.println(bsr);
   }
 }

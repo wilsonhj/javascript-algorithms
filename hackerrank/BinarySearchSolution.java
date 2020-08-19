@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class BinarySearchSolution {
   public static boolean binarySearchIterative(int[] array, int x) {
     int left = 0;
     int right = array.length - 1;
@@ -23,6 +23,8 @@ public class Solution {
     return false; 
   }
   public static void main(String[] args) {
-
+    int[] array = {1, 2, 3, 6, 4, 3};
+    boolean bs = binarySearchIterative(array, -9);
+    System.out.println(bs);
   }
 }

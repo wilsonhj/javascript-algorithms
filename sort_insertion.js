@@ -1,4 +1,4 @@
-const insertionSort = arr => { // time O(N^2) worst case
+const insertionSort = arr => { // time O(N^2) worst/average case 
   for (let i = 0; i < arr.length; i++){
     let currentVal = arr[i];
     let j;
@@ -13,5 +13,5 @@ const insertionSort = arr => { // time O(N^2) worst case
 const s = insertionSort([2,1,4,3,76,5]);
 console.log(s);
 
-const s2 = insertionSort([2,4,2,2,456,3,1,0]);
+const s2 = insertionSort([2,4,2,2,456,3,1,0]); // O(1) space
 console.log(s2);

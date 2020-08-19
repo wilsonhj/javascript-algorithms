@@ -35,6 +35,6 @@ const genericMemoize = (cb) => {
   };
 };
 
-const memoizedTimes10 = genericMemoize((n) => n*10);
-memoizedTimes10(12);
-console.log(memoizedTimes10(12), "cached result");
+const memoized = genericMemoize((n) => n*10); 
+memoized(12);
+console.log(memoized(12), "cached result");

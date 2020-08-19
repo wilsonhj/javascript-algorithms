@@ -32,7 +32,7 @@ public class QuickSorting {
         left++;
         right--;
       }
-    }
+    } 
     return left;
   }
 
